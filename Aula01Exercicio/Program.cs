@@ -1,4 +1,5 @@
 ﻿using Aula01Exercicio.Entities;
+using Aula01Exercicio.Repositories;
 
 namespace Aula01Exercicio
 {
@@ -27,6 +28,10 @@ namespace Aula01Exercicio
 
                 Console.Write("Informe a matricula do funcionário..........: ");
                 funcionario.Matricula = Console.ReadLine();
+
+                var funcionarioRepository = new FuncionarioRepository();
+
+                funcionarioRepository.GravarArquivo(funcionario);
 
                 Console.WriteLine("\nDADOS DO FUNCIONÁRIO: ");
                 Console.WriteLine($"Id do funcionário........: {funcionario.IdFuncionario}");
