@@ -9,7 +9,7 @@ namespace Aula01Exercicio.Repositories
 {
     public class FuncionarioRepository
     {
-        public void GravarArquivo (Funcionario funcionario)
+        public void ExportarDados (Funcionario funcionario)
         {
             var path = $"d:\\temp\\csharp\\webdeveloper\\funcionario_{funcionario.IdFuncionario}.txt";
 

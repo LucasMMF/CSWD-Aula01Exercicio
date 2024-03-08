@@ -31,7 +31,7 @@ namespace Aula01Exercicio
 
                 var funcionarioRepository = new FuncionarioRepository();
 
-                funcionarioRepository.GravarArquivo(funcionario);
+                funcionarioRepository.ExportarDados(funcionario);
 
                 Console.WriteLine("\nDADOS DO FUNCIONÁRIO: ");
                 Console.WriteLine($"Id do funcionário........: {funcionario.IdFuncionario}");
